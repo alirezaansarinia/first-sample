@@ -1,0 +1,344 @@
+/* mySwiperCoverflow */
+.mySwiperCoverflow .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.mySwiperCoverflow .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* mySwiperEffectCards */
+.mySwiperEffectCards,
+.mySwiper2EffectCreative,
+.mySwiper3EffectCreative,
+.mySwiper4EffectCreative,
+.mySwiper5EffectCreative {
+  margin: 100px auto;
+  width: 320px;
+  height: 240px;
+}
+
+.mySwiperEffectCards .swiper-slide,
+.mySwiper2EffectCreative .swiper-slide,
+.mySwiper3EffectCreative .swiper-slide,
+.mySwiper4EffectCreative .swiper-slide,
+.mySwiper5EffectCreative .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(1n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(1n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(1n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(1n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(2n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(2n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(2n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(2n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(3n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(3n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(3n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(3n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(4n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(4n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(4n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(4n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(5n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(5n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(5n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(5n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(6n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(6n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(6n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(6n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(7n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(7n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(7n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(7n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(8n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(8n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(8n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(8n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(9n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(9n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(9n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(9n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.mySwiperEffectCards .swiper-slide:nth-child(10n),
+.mySwiper2EffectCreative .swiper-slide:nth-child(10n),
+.mySwiper3EffectCreative .swiper-slide:nth-child(10n),
+.mySwiper4EffectCreative .swiper-slide:nth-child(10n),
+.mySwiper5EffectCreative .swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+
+/* mySwiperCube */
+.mySwiperCube {
+  width: 300px;
+  height: 300px;
+}
+
+.mySwiperCube .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.mySwiperCube .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* features */
+.features img {
+  height: 185px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.album .btn-group,
+.livePreview .btn-group {
+  display: none;
+}
+
+.album .card {
+  transition: all 0.2s;
+}
+
+.album .card:hover .btn-group,
+.livePreview .card:hover .btn-group {
+  display: inline-flex;
+}
+.album .card:hover {
+  transform: translate(0, -0.5rem);
+}
+
+.album img {
+  height: 269px;
+}
+
+/* navigation */
+a.dropdown-toggle::after {
+  display: none;
+}
+
+.mainMenu a {
+  color: rgba(255, 255, 255, 0.55);
+}
+.mainMenu a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.subMenu {
+  display: none;
+}
+
+.mainMenu > .nav-item:hover > .subMenu {
+  display: flex;
+}
+
+/* SignIn */
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+/* upBtn */
+.upBtn {
+  top: 88%;
+  left: 1%;
+}
+
+.commsBtn {
+  top: 88%;
+  right: 1%;
+  z-index: 9999 !important;
+}
+
+/* chatBox */
+.chatBox {
+  width: 400px;
+  height: 98vh;
+  border: 1px solid #000;
+  top: 1%;
+  right: 3%;
+  z-index: 9999;
+}
+
+.chatBox .chatHeader {
+  background-color: #bba06b;
+  height: 15%;
+}
+
+.chatHeader .boxImages {
+  width: 33%;
+  height: 100%;
+}
+
+.boxImages img {
+  width: 50%;
+  height: 50%;
+  border: 2px solid #bba06b;
+}
+
+.boxImages img:nth-child(2) {
+  transform: translate(-1rem, 0);
+}
+
+.boxImages img:nth-child(3) {
+  transform: translate(-2rem, 0);
+}
+
+.myBtn {
+  background-color: #bba06b;
+  transition: all 0.5s;
+}
+
+.myBtn:hover {
+  background-color: #cfc1a4;
+}
+
+.userQuestions a {
+  font-size: 0.8rem;
+}
+
+.userQuestions p {
+  font-size: 0.9rem;
+}
+
+.chatBody {
+  background-image: url("../images/chatBox/bgchatBox.png");
+  height: 85%;
+}
+
+.chatBox input::placeholder {
+  color: #bdbdbd;
+  font-size: 0.8rem;
+}
+
+.leftSide {
+  width: 8%;
+  height: 10%;
+  background-color: #0000002a;
+}
+
+.leftSide:hover {
+  background-color: #00000096;
+}
+
+div.communicateUs.animate__animated.animate__fadeInUp,
+form.chatBox.animate__animated.animate__fadeInUp {
+  --animate-duration: 0.5s;
+}
+
+/* ratingStars */
+.rate {
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* preview */
+.licenseStyle>li>ul{
+  display: none;
+}
+
+.licenseStyle>li:hover>ul{
+  display: block;
+}
+
+.licenseStyle>li>ul>li:hover{
+  background-color: rgb(247, 247, 247);
+}
+
+.addToCart{
+  background-color: #875aca;
+}
+.addToCart:hover{
+  background-color: #614092;
+}
+
+/* header */
+.headerFixed{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.templateSubMenu{
+  overflow-y: scroll;
+  height: 30rem;
+}

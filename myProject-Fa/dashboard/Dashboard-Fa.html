@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-bs-theme="light">
+  <head>
+    <script src="./assets/js/colorModes.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>داشبورد</title>
+    <link
+      rel="stylesheet"
+      href="./assets/css/jsdelivr.net_npm_@docsearch_css@3.css"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <script src="./assets/js/popup.js"></script>
+    <script src="./assets/js/tat_popup.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow"
+      data-bs-theme="dark"
+    >
+      <ul class="navbar-nav flex-row d-md-none">
+        <li class="nav-item text-nowrap">
+          <button
+            class="nav-link px-3 text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSearch"
+            aria-controls="navbarSearch"
+            aria-expanded="false"
+            aria-label="Toggle search"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </li>
+        <li class="nav-item text-nowrap">
+          <button
+            class="nav-link px-3 text-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarMenu"
+            aria-controls="sidebarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </li>
+      </ul>
+      <a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white"
+        href="../index.html"
+        >WDC</a
+      >
+
+      
+
+      <div id="navbarSearch" class="navbar-search w-100 collapse">
+        <input
+          class="form-control w-100 rounded-0 border-0"
+          type="text"
+          placeholder="جستجو"
+          aria-label="Search"
+        />
+      </div>
+    </header>
+
+    <!-- sidebar&main -->
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary"
+        >
+          <div
+            class="offcanvas-md offcanvas-start bg-body-tertiary"
+            tabindex="-1"
+            id="sidebarMenu"
+            aria-labelledby="sidebarMenuLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="sidebarMenuLabel">WDC</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarMenu"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
+            >
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex align-items-center gap-2 active"
+                    aria-current="page"
+                    href="#"
+                  >
+                    <i class="bi bi-house-fill"></i>
+                    داشبورد
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-file-earmark"></i>
+                    سفارشات
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-cart3"></i>
+                    محصولات
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-people"></i>
+                    مشتریان
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    گزارش ها
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-puzzle"></i>
+                    یکپارچه سازی ها
+                  </a>
+                </li>
+              </ul>
+
+              <h6
+                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase"
+              >
+                <span>گزارش های ذخیره شده</span>
+                <a
+                  class="link-secondary"
+                  href="#"
+                  aria-label="Add a new report"
+                >
+                  <i class="bi bi-plus-circle"></i>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-auto">
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-file-earmark-text"></i>
+                    ماه جاری
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-file-earmark-text"></i>
+                    سه ماهه گذشته
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-file-earmark-text"></i>
+                    مشارکت اجتماعی
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-file-earmark-text"></i>
+                    فروش آخر سال
+                  </a>
+                </li>
+              </ul>
+
+              <hr class="my-3" />
+
+              <ul class="nav flex-column mb-auto">
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-gear-wide-connected"></i>
+                    تنظیمات
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <i class="bi bi-door-closed"></i>
+                    خروج از سیستم
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">داشبورد</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group me-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  اشتراک گذاری
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  صادرات
+                </button>
+              </div>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1"
+              >
+                <i class="bi bi-calendar3"></i>
+                این هفته
+              </button>
+            </div>
+          </div>
+
+          <canvas
+            class="my-4 w-100"
+            id="myChart"
+            width="1076"
+            height="454"
+            style="
+              display: block;
+              box-sizing: border-box;
+              height: 454px;
+              width: 1076px;
+            "
+          ></canvas>
+
+          <h2>عنوان بخش</h2>
+          <div class="table-responsive small">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">سرتیتر</th>
+                  <th scope="col">سرتیتر</th>
+                  <th scope="col">سرتیتر</th>
+                  <th scope="col">سرتیتر</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>تصادفی</td>
+                  <td>داده ها</td>
+                  <td>نگهدارنده مکان</td>
+                  <td>متن</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>نگهدارنده مکان</td>
+                  <td>غیر مرتبط</td>
+                  <td>بصری</td>
+                  <td>چیدمان</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>داده ها</td>
+                  <td>ثروتمند</td>
+                  <td>داشبورد</td>
+                  <td>جدولی</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>اطلاعات</td>
+                  <td>نگهدارنده مکان</td>
+                  <td>گویا</td>
+                  <td>داده ها</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>متن</td>
+                  <td>تصادفی</td>
+                  <td>چیدمان</td>
+                  <td>داشبورد</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>داشبورد</td>
+                  <td>غیر مرتبط</td>
+                  <td>متن</td>
+                  <td>نگهدارنده مکان</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>داشبورد</td>
+                  <td>گویا</td>
+                  <td>ثروتمند</td>
+                  <td>داده ها</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>نگهدارنده مکان</td>
+                  <td>جدولی</td>
+                  <td>اطلاعات</td>
+                  <td>غیر مرتبط</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>تصادفی</td>
+                  <td>داده ها</td>
+                  <td>نگهدارنده مکان</td>
+                  <td>متن</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>نگهدارنده مکان</td>
+                  <td>غیر مرتبط</td>
+                  <td>بصری</td>
+                  <td>چیدمان</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>داده ها</td>
+                  <td>ثروتمند</td>
+                  <td>داشبورد</td>
+                  <td>جدولی</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>اطلاعات</td>
+                  <td>نگهدارنده مکان</td>
+                  <td>گویا</td>
+                  <td>داده ها</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>متن</td>
+                  <td>نگهدارنده مکان</td>
+                  <td>چیدمان</td>
+                  <td>داشبورد</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>داشبورد</td>
+                  <td>غیر مرتبط</td>
+                  <td>متن</td>
+                  <td>بصری</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>داشبورد</td>
+                  <td>گویا</td>
+                  <td>ثروتمند</td>
+                  <td>داده ها</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>تصادفی</td>
+                  <td>جدولی</td>
+                  <td>اطلاعات</td>
+                  <td>متن</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jsdelivr.net_npm_chart.js@4.3.2_dist_chart.umd.js"></script>
+    <script src="./assets/js/dashboard.js"></script>
+  </body>
+  <template id="transover-popup-template">
+    <style>
+      .pos_translation {
+        padding-bottom: 3px;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      .rtl {
+        direction: rtl;
+      }
+
+      main {
+        color: #333;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: initial;
+
+        background: #fcf7d9;
+        text-align: left;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ccc;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+        border-radius: 5px;
+        padding: 6px 8px 3px 8px;
+        position: fixed;
+        z-index: 2147483647;
+        top: -1500px;
+        left: 0;
+        box-sizing: content-box;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+
+        /* To fix the following issue:
+        1. Have translate on hover enabled (opposed to translate on click).
+        2. Wisit a website that has a dropdown menu that opens on hover.
+        3. Open the menu.
+        4. Hover over a word within that menu.
+        5. Incidentally move the cursor over the TransOver popup.
+        The hover menu gets closed.
+        */
+        pointer-events: none;
+      }
+
+      .pos_translation {
+        font-size: 1em;
+        line-height: 1.2em;
+      }
+
+      .red {
+        color: red;
+      }
+
+      .from_lang {
+        color: grey;
+        font-size: 0.8em;
+        line-height: 1.2em;
+        margin-top: 2px;
+        margin-bottom: 3px;
+      }
+    </style>
+
+    <main translate="no"></main>
+  </template>
+  <template id="transover-tat-popup-template">
+    <style>
+      #tat_input_container {
+        display: flex;
+        margin-bottom: 10px;
+      }
+
+      #tat_input_container label {
+        line-height: 26px;
+      }
+
+      #tat_input {
+        margin-left: 5px;
+        flex-grow: 2;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 2px;
+        border: 1px #ccc solid;
+        padding-left: 5px;
+      }
+
+      #tat_submit_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #tat_submit_container select {
+        margin-left: 5px;
+      }
+
+      #tat_submit {
+        width: 45px;
+        margin-left: 5px;
+      }
+
+      #tat_to_lang {
+        width: 150px;
+      }
+
+      #swap_languages {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEKElEQVR4nL1Vb0xbVRQ/97Xre23pn9FSNmBQGEqGMJQPIyU6MkMczf6gbAyNk5lo9gkTdTPGLPswzRITjcYPftREiYQ/g5EVZZEwNt3ELBmiI/wLqB1rFdaWDaSjfe+e44cHpUAL0URPcnPuu/e887vn3PM7F+A/Fs1mBi+fbNBXPHNgv6ShCa/X+48BhI02T7522lbmrrtsTct8RRCETQ+TSLTJNhreOuvcXXG4y2C1F874vL25BcWP5hWWKgQEAABKNBJZmAvNzIaCi1d6vqVkfliixdfPnH+8eO9BzxaDKQuRgCMRR2KcYhoQgaKRh/PBO+O90yM/fhTy/faD51InrvW1LuzT5z6sLKo4/LVGZ3AoSMARQEEChYgpSKAgMa5qQKaRREvaLmteST0jlHIc5usjw8M8KUBN3Yu2soP1fYLOkLrkDJadxb5pWQMgESASIDHBsC3vSR4Ja3fYUq6OjY1SQoBUq3kxHPT/lJpdUAVaMYUjMQWJKbR8clA1qWniBAyJGKpgTHLklC3cHb469POANyHA1NQUDN66+atNxCuWjJ2VgmhUI+EICkfkiKQOIiRgSKDexxIAAtMQoikjRbg4Pj6OAEmq6KsvPhuok6P7H3n6+ZaUdGep/5fv+vyDfe8AQCy/Wslo3+567n3Rnl1CKgAhEOgceeU6UbQCQCApAABAS1PjZC2XD2S7qr9EpPCD+7MDPT09SrzNcYNFdpQfuUgEAhIBEQAJGpEBmDcFAABoa2mePopYK5pt+2RZXleCi0HftTueTx4jIi1jasUTESHiH8s2MR68cea9Ap1kLCHVCJAAwnOh6ZnfR79vb29f5fzZupcMzpLyd32D1862tTY/3OiQsQiMVvuhQlfVB5xWiPUgOO0LTE3sAQD/qr+4rE0v2vsm0xmdxwTh1dbmpvubAoT+nLotq45haZBoScsorjrRkbn7qTZgQjSWZ0JJQYKtO5+oYaIx7ZigeaG1qdGfCCCWopqjtcZ99W+P64yWDI5EnFTGokou4kgMCUite4L4eTjgG/Jfv1Db3Pj56FqAGA9Ghofl/DynvDV7l3ulJQAotBRRHKEwvvaJQCOZ0vQZ+dW5Nn3/0OCtuwkBAAC228yDW/TGfL0ts4gvMZivtIV49sJaMNLqTJGQb36bReqdnJxM3CrGRkd5ulFzWYkuSnr7jlICjSbOGSzPOREgrKwpclS+13/h47Bv7LzH41lVVQnbtdvt1phT7SXWnKLjkj1rj6DTpxKBQKS+BgRMEB25+UjElMW/Fu7daD0XCfk/7ejoCCe95ETicrmYyWQSRVHUQdzrJ6WYTVmHTnmj88HZwI2WU5G5QFNnZ2c0kY8NAZKJu/qI2Vl54nawv60hPDf7TVdXF09m+6/eWafTyWlm4tLcbOBmd3f3uhbyv8rfG8mfJ968lFgAAAAASUVORK5CYII=);
+        cursor: pointer;
+      }
+
+      #swap_languages.disabled {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEIklEQVR4nL1VX0hbVxj/7k0w6TS3QVck+qC2/tfhiMyRUR8GlU4XNzJYsFBUluXBh/Uho0PBPWww6TbEpzGz+pKBC2OS2tkHRbQd3ZiIdkoVghptdO2MRmP+3Xtzb+759nBNFl0S8WH7weF+nO+7v985h/P7DsB/DMVZBTab7YLJZLouCMKG1+s9twCdLdnf31/Q09MzWVZWZqFp+szFpIMyU2JgYKC0s7Pzga6oqHZ9fX2msbGx0mAwxBN5juNi+/v7e36/n5+cnMRzqQ4NDb3q9/t3JEnCuCRhPB4noiiiIIgkJggYi8WQ53lycHgYnJmddfX29l41mUxZTyMJu91+LRKJBCSZGEVRREEUiSATE57nkeM4ZFmWRKNRjEQieHQUFO+OjAyYzWbVab4T59rd3V1gs9ke5ubm5iMAACJgckBKfHIAIF1TW3s1HAopc3JyHrndbkwrkJeXx29sbPyh1+vfuqBW5yEChYDUMVHql0LyT0wQAZFQlZVVry8sLDxaXFzwphXY3t6Gubm5zXA4PFtXV3eNYZh8RASJEJDiEiESQXlIeCxMISIQJICIFEVRCkmSNKIo3FtbWyMAGW6R3W5/wvP89Y9u3fqxprpG/2Bi4qHL5eoDAClRwzDMyxaL5U55RWUDIgEkiAQRqqqr31CpVFoA8GcUAABwOBweQRDetlgs30uEsIFA4Mn09HQ8tSY/v0C0Wq33CCItHx8BhUKhAgDmTAEAAKfT6ZMk6X2dTvemKIrkdP7Zs61f+vp66xBRSVEUAAAgIhJC/krUUIlgcHCwimGYBvlWyNjb2/MtLS09HhsbO0H+gcXyUktLy+c/37//qdPp5LItMrkDnU7X3tHR8fWxACIitbOz83xlZaUJAF6k/hTjeeU77e02RqMppWn6w9HR0aMzBTwez1OUAQmN4uLiotu3P3EZjcafaJoWjueBEKImBKG5ufk9jUZzSalU3nA4HC8yiQAAgNlszt3d3X0utwSByO0ghhzHI8txJMqyGIlESTgcwVAojMFgiBwdBfEwEMCFxcWnVqu1Oh1v0gerq6tiSUmJqG9sbEXZtgljATltNJKcpxAJXGQuXqqvf+VdmqZ/n5+f/zOtAACAWq1eYhim/HJZWT1mEiAJc8nuRSLHOSqVZmtrM6xUKmc8Hk/6VuF2uyVBECZZllWXV1ToFbRCkeJUOBZIkCdjnuPEkbvfDS0vL38xMTFx4lZRkAatra2KwsLChteamm5euXylSW5+CTMhUEDRVdVV5YQgFQoGo8P24c+2vd5vXC4Xe5orrUACBoOB0mg0KpVKlQMpr59Wq9Xc+fIrr8/nC9iHv/3Y5/P9MD4+LmTjOhfMZjPz+NffvF1dXe1GozHrU5p1B5nQ1tam1Gq1pQcHB5tTU1P/aiH/K/4G7RvFhRjTPe0AAAAASUVORK5CYII=);
+        cursor: auto;
+      }
+
+      main {
+        color: #333;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: initial;
+
+        background: #fcf7d9;
+        text-align: left;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ccc;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+        border-radius: 5px;
+        padding: 10px 12px 12px 12px;
+        position: fixed;
+        z-index: 2147483647;
+        top: 15px;
+        right: 15px;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      #disable_on_this_page_container {
+        margin-bottom: 8px;
+        color: blue;
+      }
+
+      #disable_on_this_page_container label {
+        margin-right: 10px;
+      }
+
+      #disable_on_this_page,
+      #disable_everywhere {
+        position: relative;
+        vertical-align: middle;
+        bottom: 1px;
+        margin-right: 5px;
+        margin-left: 0px;
+      }
+
+      #top_row_container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #tat_close {
+        width: 12px;
+        height: 12px;
+        background: -webkit-linear-gradient(
+            -45deg,
+            transparent 0%,
+            transparent 46%,
+            darkgrey 46%,
+            darkgrey 56%,
+            transparent 56%,
+            transparent 100%
+          ),
+          -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, darkgrey
+                46%, darkgrey 56%, transparent 56%, transparent 100%);
+      }
+    </style>
+
+    <main translate="no">
+      <div id="top_row_container">
+        <div id="disable_on_this_page_container">
+          <label
+            ><input id="disable_on_this_page" type="checkbox" />Disable on this
+            site</label
+          >
+          <label
+            ><input id="disable_everywhere" type="checkbox" />Disable
+            everywhere</label
+          >
+        </div>
+        <a href="#" id="tat_close"></a>
+      </div>
+      <div id="tat_input_container">
+        <label for="tat_from_lang">Translate</label>
+        <input id="tat_input" type="text" />
+      </div>
+      <div id="tat_submit_container">
+        <label for="tat_from_lang">from</label>
+        <select id="tat_from_lang"></select>
+
+        <div id="swap_languages"></div>
+
+        <label for="tat_to_lang">into</label>
+        <select id="tat_to_lang"></select>
+
+        <input type="submit" id="tat_submit" value="go" />
+      </div>
+    </main>
+  </template>
+</html>
